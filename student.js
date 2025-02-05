@@ -4,7 +4,7 @@ const fs = require("fs");
 const XLSX = require("xlsx");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const FILE_PATH = "students.xlsx";
 
 app.use(cors());
